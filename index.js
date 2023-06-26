@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 // db
-mongoose.connect('mongodb://localhost:27017', {
+mongoose.connect('mongodb+srv://krutvikdevmurarivision:krutvikdevmurarivision@cluster0.ihub099.mongodb.net/', {
     dbName: 'Backend'
 }).then(() => console.log("Database Connected")).catch(e => console.log(e))
 const users = []
